@@ -22,15 +22,18 @@ def eu002(lim = 4 * 1000 * 1000):
 def eu002_alt(lim):
     """
     Alternative solution using a generator.
-    Must sum over this generator to get the answer.
+    Must sum over the generator at the end.
     """
     
-    a, b = 1, 2
+    def numGen(lim):
     
-    while a < lim:
-    
-        if not a % 2: 
-            yield a           # <-- generator
-            
-        a, b = b, a + b       # <-- tuple assignment to avoid tmp var
+        a, b = 1, 2
         
+        while a < lim:
+        
+            if not a % 2: 
+                yield a           # <-- generator
+                
+            a, b = b, a + b       # <-- tuple assignment to avoid tmp var
+        
+    return sum(numGen(lim))

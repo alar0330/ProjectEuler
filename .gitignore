@@ -1,3 +1,17 @@
+######################################
+# C++ GITIGNORE BELOW:
+######################################
+
+bin/
+*.exe
+*.o
+
+
+
+######################################
+# DEFAULT PYTHON GITIGNORE BELOW:
+######################################
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
