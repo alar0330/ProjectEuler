@@ -2,17 +2,17 @@
 Project Euler: Problem #003
 """
 
-import math
+from math import sqrt
 
 def eu003(num):
     """
-    TODO: add info
+    Solve by factorizing the input parameter.
     """
     
     # check validity of input
     assert(num >= 0)
     
-    # check 1 & 2
+    # check 0 & 1
     if num < 2: 
         return num
         
@@ -24,7 +24,7 @@ def eu003(num):
         num //= 2
         
     # reduce odd
-    lim = math.sqrt(num)
+    lim = sqrt(num)
     i = 3
     
     while i <= lim:
@@ -32,7 +32,7 @@ def eu003(num):
         if num % i == 0:
             res.append(i)
             num //= i
-            lim = math.sqrt(num)
+            lim = sqrt(num)
             
         else:
             i += 2
