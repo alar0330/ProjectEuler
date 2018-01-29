@@ -1,10 +1,6 @@
 """
 Automated testing of Python solutions to the Project Euler problems.
 Using unittest framework.
-
-TODO: 
-    * automatically read the correct answers from an ASCII-file
-    * automatically read the inputs for Euler problems from ASCII
 """
 
 # import unittest
