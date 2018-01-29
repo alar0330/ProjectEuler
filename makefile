@@ -35,7 +35,7 @@ cppTest: cppUnit
 	@ $(bin)/$(trun).exe
 
 cppUnit: $(out)/$(trun).o
-	$(C++) $^ $(WFLAGS) $(GTEST_FLAGS) -o $(bin)/$(trun).exe
+	$(C++) $^ $(GTEST_FLAGS) -o $(bin)/$(trun).exe
 	
 $(out)/$(trun).o: $(test)/$(trun).cpp
 	$(C++) -c $< $(WFLAGS) -o $@
