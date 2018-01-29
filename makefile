@@ -1,5 +1,8 @@
-# OpenMP-bench: makefile
-#
+###########################
+# ---- PROJECT EULER ---- #
+###########################
+
+
 
 # Googletest settings
 GTEST_PATH = ${GOOGLE_TEST_PATH}
@@ -17,6 +20,11 @@ PY3 = py3
 # Directory settings
 out = out
 bin = bin
+test = test
+lib = lib
+
+# TestRunner
+trun = testRunner
 
 # Phonies
 .PHONY = cppUnit cppTest pyTest clean
@@ -24,15 +32,18 @@ bin = bin
 	
 # C++: Compile & Run
 cppTest: cppUnit
-	$(bin)/testRunner.exe
+	@ $(bin)/$(trun).exe
 
-cppUnit: testRunner.cpp
-	$(C++) $(WFLAGS) $(GTEST_FLAGS) -o $(bin)/testRunner.exe $<
-
+cppUnit: $(out)/$(trun).o
+	$(C++) $^ $(WFLAGS) $(GTEST_FLAGS) -o $(bin)/$(trun).exe
+	
+$(out)/$(trun).o: $(test)/$(trun).cpp
+	$(C++) -c $< $(WFLAGS) -o $@
+	
 	
 # Python: Compile & Run
 pyTest:
-	$(PY3) testRunner.py
+	@ $(PY3) $(test)/$(trun).py
 
 	
 # Clean up

@@ -10,10 +10,11 @@
 // Googletest header
 #include "gtest/gtest.h"
 
+
 // Euler templates to test
-#include "p001/eu001.hpp"
-// #include "p002/eu002.hpp"
-// #include "p003/eu003.hpp"
+#include "../problems/p001/eu001.hpp"
+// #include "../problems/p002/eu002.hpp"
+// #include "../problems/p003/eu003.hpp"
 
 
 
@@ -22,15 +23,20 @@
 class Test001 : public testing::Test {
     
     virtual void SetUp() override {
-      
-        pinp = 1000;
-        pans = 233168;
-      
+        
+        // Question input / answer
+        qinp = 1000;
+        qans = 233168;
+        
+        // Hint input / answer
+        hinp = 10;
+        hans = 23;
+     
     }
     
     public:
    
-        int pinp, pans;
+        int qinp, qans, hinp, hans;
    
 };
         
@@ -50,6 +56,12 @@ TEST_F(Test001, zeroCase) {
 
 TEST_F(Test001, eulerProblemCase) {
   
-    ASSERT_EQ(eu001(pinp), pans);
+    ASSERT_EQ(eu001(qinp), qans);
+   
+}
+
+TEST_F(Test001, eulerHintCase) {
+  
+    ASSERT_EQ(eu001(hinp), hans);
    
 }
