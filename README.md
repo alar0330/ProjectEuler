@@ -13,14 +13,14 @@ include automated parsing of provided XML-file with the answers to the Euler pro
 Py-files are documented with Docstring.
 
 ## C++ Setup
-Make sure that the path to 'googletest' lib is set as `GOOGLE_TEST_PATH` environment variable (see *makefile*).
+- Set path to 'googletest' lib as `GOOGLE_TEST_PATH` environment variable (see *makefile*).
 
 ## C++ Compile & Test
 ```
 make cppTest
 ```
 ## Python Setup
-Change the standard Python 3 interpreter alias (default is *py3*, see *makefile*).
+- Change the standard Python 3 interpreter alias if necessary (default is *py3*, see *makefile*).
 
 ## Python Compile & Test
 ```
