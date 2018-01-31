@@ -25,6 +25,7 @@ from problems.p001.eu001 import *
 from problems.p002.eu002 import *
 from problems.p003.eu003 import *
 from problems.p004.eu004 import *
+from problems.p005.eu005 import *
 
 
 
@@ -165,6 +166,33 @@ class test004(unittest.TestCase):
         
     def test_unityCase(self):
         self.assertEqual(eu004(1), 9, failed_unity_answer)
+        
+        
+class test005(unittest.TestCase):
+
+    # --- Setup
+    def setUp(self):
+        pnum = 5
+        pstr = "p{:03d}".format(pnum)
+        #    
+        self.qinp = int(root.find(pstr).find('question').find('input').text)
+        self.qans = int(root.find(pstr).find('question').find('answer').text)
+        #
+        self.hinp = int(root.find(pstr).find('hint').find('input').text)
+        self.hans = int(root.find(pstr).find('hint').find('answer').text)
+        
+    def tearDown(self):
+        pass
+        
+    # --- Tests
+    def test_correctAnswer(self):
+        self.assertEqual(eu005(self.qinp), self.qans, failed_correct_answer)
+        
+    def test_hintCase(self):
+        self.assertEqual(eu005(self.hinp), self.hans, failed_hint_answer)
+        
+    #def test_unityCase(self):
+    #    self.assertEqual(eu005(1), 9, failed_unity_answer)
         
         
 # ------ RUNNER -------

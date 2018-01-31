@@ -40,7 +40,12 @@
     </hint>
   </p004>
   <p005>
+    <hint>
+      <input>10</input>
+      <answer>2520</answer>
+    </hint>
     <question>
+	  <input>20</input>
       <answer>232792560</answer>
     </question>
   </p005>
