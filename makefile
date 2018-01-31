@@ -21,13 +21,13 @@ PY3 = py3
 out = out
 bin = bin
 test = test
-lib = lib
+prob = problems
 
 # TestRunner
 trun = testRunner
 
 # Phonies
-.PHONY = cppUnit cppTest pyTest clean
+.PHONY = cppUnit cppTest pyTest clean print
 
 	
 # C++: Compile & Run
@@ -35,17 +35,21 @@ cppTest: cppUnit
 	@ $(bin)/$(trun).exe
 
 cppUnit: $(out)/$(trun).o
-	$(C++) $^ $(GTEST_FLAGS) -o $(bin)/$(trun).exe
+	$(C++) $< $(GTEST_FLAGS) -o $(bin)/$(trun).exe
 	
-$(out)/$(trun).o: $(test)/$(trun).cpp
+$(out)/$(trun).o: $(test)/$(trun).cpp $(wildcard $(prob)/**/*.hpp)
 	$(C++) -c $< $(WFLAGS) -o $@
+	
 	
 	
 # Python: Compile & Run
 pyTest:
 	@ $(PY3) $(test)/$(trun).py
 
+
+# Misc
+print:
+	@ echo $(wildcard problems/**/*.hpp)
 	
-# Clean up
 clean:
 	del *.exe $(out)/*.o *.out

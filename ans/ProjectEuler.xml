@@ -1,38 +1,43 @@
 <ProjectEuler>
   <p001>
     <question>
-	  <input>1000</input>
+    <input>1000</input>
       <answer>233168</answer>
     </question>
-	<hint>
-	  <input>10</input>
+    <hint>
+      <input>10</input>
       <answer>23</answer>
     </hint>
   </p001>
   <p002>
     <question>
-	  <input>4000000</input>
+      <input>4000000</input>
       <answer>4613732</answer>
     </question>
-	<hint>
-	  <input>100</input>
+    <hint>
+      <input>100</input>
       <answer>44</answer>
     </hint>
   </p002>
   <p003>
     <question>
-	  <input>600851475143</input>
+      <input>600851475143</input>
       <answer>6857</answer>
     </question>
-	<hint>
-	  <input>13195</input>
+    <hint>
+      <input>13195</input>
       <answer>29</answer>
     </hint>
   </p003>
   <p004>
     <question>
+      <input>3</input>
       <answer>906609</answer>
     </question>
+    <hint>
+      <input>2</input>
+      <answer>9009</answer>
+    </hint>
   </p004>
   <p005>
     <question>

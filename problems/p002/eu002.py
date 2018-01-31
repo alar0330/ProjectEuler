@@ -5,6 +5,9 @@ Project Euler: Problem #002
 def eu002(lim = 4 * 1000 * 1000):
     """
     Naive solution with a function.
+
+    :param lim: Max number to sum up to.
+    :returns: The sum of the odd Fibo-numbers.
     """    
     
     a, b = 0, 1
@@ -22,7 +25,11 @@ def eu002(lim = 4 * 1000 * 1000):
 def eu002_alt(lim):
     """
     Alternative solution using a generator.
-    Must sum over the generator at the end.
+    
+    **Note**: Must sum over the generator at the end.
+    
+    :param lim: Max number to sum up to.
+    :returns: The sum of the odd Fibo-numbers.
     """
     
     def numGen(lim):

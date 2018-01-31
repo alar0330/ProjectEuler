@@ -24,6 +24,7 @@ root = ET.parse('ans/ProjectEuler.xml').getroot()
 from problems.p001.eu001 import *
 from problems.p002.eu002 import *
 from problems.p003.eu003 import *
+from problems.p004.eu004 import *
 
 
 
@@ -132,13 +133,38 @@ class test003(unittest.TestCase):
     def test_zeroCase(self):
         self.assertEqual(eu003(0), 0, failed_zero_answer)
         
-    def test_zeroCase(self):
+    def test_unityCase(self):
         self.assertEqual(eu003(1), 1, failed_unity_answer)
         
     def test_inp100_chk5(self):
         self.assertEqual(eu003(100), 5, "WRONG answer to Input-is-100 case")
+ 
+ 
+class test004(unittest.TestCase):
+
+    # --- Setup
+    def setUp(self):
+        pnum = 4
+        pstr = "p{:03d}".format(pnum)
+        #    
+        self.qinp = int(root.find(pstr).find('question').find('input').text)
+        self.qans = int(root.find(pstr).find('question').find('answer').text)
+        #
+        self.hinp = int(root.find(pstr).find('hint').find('input').text)
+        self.hans = int(root.find(pstr).find('hint').find('answer').text)
         
+    def tearDown(self):
+        pass
         
+    # --- Tests
+    def test_correctAnswer(self):
+        self.assertEqual(eu004(self.qinp), self.qans, failed_correct_answer)
+        
+    def test_hintCase(self):
+        self.assertEqual(eu004(self.hinp), self.hans, failed_hint_answer)
+        
+    def test_unityCase(self):
+        self.assertEqual(eu004(1), 9, failed_unity_answer)
         
         
 # ------ RUNNER -------

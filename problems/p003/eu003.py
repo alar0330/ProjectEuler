@@ -7,6 +7,9 @@ from math import sqrt
 def eu003(num):
     """
     Solve by factorizing the input parameter.
+
+    :param num: Number to factorize.
+    :returns: The largest prime factor.
     """
     
     # check validity of input
