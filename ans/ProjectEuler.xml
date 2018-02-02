@@ -45,17 +45,27 @@
       <answer>2520</answer>
     </hint>
     <question>
-	  <input>20</input>
+      <input>20</input>
       <answer>232792560</answer>
     </question>
   </p005>
   <p006>
+    <hint>
+      <input>10</input>
+      <answer>2640</answer>
+    </hint>
     <question>
+      <input>100</input>
       <answer>25164150</answer>
     </question>
   </p006>
   <p007>
+    <hint>
+      <input>6</input>
+      <answer>13</answer>
+    </hint>
     <question>
+      <input>10001</input>
       <answer>104743</answer>
     </question>
   </p007>
