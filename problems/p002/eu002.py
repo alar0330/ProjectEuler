@@ -15,10 +15,10 @@ def eu002(lim = 4 * 1000 * 1000):
     
     while b < lim:
     
-        a, b = b, a + b       # <-- tuple assignment to avoid tmp var
-        
         if not b % 2: 
             sum += b
+            
+        a, b = b, a + b       # <-- tuple assignment to avoid tmp var
     
     return sum
     
@@ -34,13 +34,17 @@ def eu002_alt(lim):
     
     def numGen(lim):
     
-        a, b = 1, 2
+        a, b = 0, 1
         
-        while a < lim:
+        while b < lim:
         
-            if not a % 2: 
-                yield a           # <-- generator
+            if not b % 2: 
+                yield b           # <-- generator
                 
             a, b = b, a + b       # <-- tuple assignment to avoid tmp var
         
     return sum(numGen(lim))
+    
+    
+if __name__ == '__main__':
+    print("Check: {}".format(eu002(100)))

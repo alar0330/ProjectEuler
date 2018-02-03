@@ -15,22 +15,24 @@ def eu007(nth):
     """
 
     def isPrime(n):
-    """Efficient prime number search algorithm.
-    """
+        """Efficient prime number search algorithm."""
     
-        if n == 2: return True
+        if n <= 1: return False
         
-        if not n % 2: return False
+        elif n <= 3: return True
         
-        for d in range(3, int(sqrt(n))+1, 2):
-            if not n % d: return False
-            
+        elif not n % 2: return False
+        
         else:
-            return True
+        
+            for d in range(3, int(sqrt(n))+1, 2):
+                if not n % d: return False
+                
+            else:
+                return True
     
     def nextPrime():
-    """Prime number generator.
-    """
+        """Prime number generator."""
     
         s = 2
         
@@ -44,7 +46,7 @@ def eu007(nth):
     
     
     p = nextPrime()         # <-- create generator object
-    for _ in range(nth-1):  # <-- skip first 'max-1' lines
+    for _ in range(nth-1):  # <-- skip first 'nth-1' lines
         next(p)
         
     return next(p)          # <-- return 'nth'

@@ -100,7 +100,7 @@ class test002(unittest.TestCase):
     def test_correctAnswer_alt(self):
         self.assertEqual(eu002_alt(self.qinp), self.qans, failed_correct_answer)
         
-    def test_hintCase(self):
+    def test_hintCase_alt(self):
         self.assertEqual(eu002_alt(self.hinp), self.hans, failed_hint_answer)
         
     def test_zeroCase_alt(self):
