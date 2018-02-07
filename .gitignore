@@ -1,4 +1,12 @@
 ######################################
+# Java GITIGNORE BELOW:
+######################################
+
+*.class
+
+
+
+######################################
 # C++ GITIGNORE BELOW:
 ######################################
 
@@ -11,7 +19,7 @@ bin/
 
 
 ######################################
-# DEFAULT PYTHON GITIGNORE BELOW:
+# DEFAULT Python GITIGNORE BELOW:
 ######################################
 
 # Byte-compiled / optimized / DLL files

@@ -7,7 +7,7 @@ def eu002(lim = 4 * 1000 * 1000):
     Naive solution with a function.
 
     :param lim: Max number to sum up to.
-    :returns: The sum of the odd Fibo-numbers.
+    :returns: The sum of the even Fibo-numbers.
     """    
     
     a, b = 0, 1

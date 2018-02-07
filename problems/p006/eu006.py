@@ -37,4 +37,3 @@ def eu006_alt(max):
 # Independent driver
 if __name__ == '__main__':
     print("Check: {}".format(eu006(10)))
-    print("Check (alt): {}".format(eu006_alt(10)))
