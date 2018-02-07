@@ -9,11 +9,10 @@ package problems.p004;
 import problems.util.EulerSolvable;
 
 
-// Fibonacci
+// Palindrome
 public final class eu004 implements EulerSolvable {
 
     /**
-    * TODO: update
     * Solve by factorizing the input parameter.
     *
     * @param in  Number of digits that product numbers made of (String in in[0]).

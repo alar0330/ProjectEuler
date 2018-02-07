@@ -9,7 +9,7 @@ package problems.p003;
 import problems.util.EulerSolvable;
 
 
-// Fibonacci
+// Largest prime factor
 public final class eu003 implements EulerSolvable {
 
     /**
