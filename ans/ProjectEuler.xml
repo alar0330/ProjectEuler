@@ -70,7 +70,12 @@
     </question>
   </p007>
   <p008>
+    <hint>
+      <input>4</input>
+      <answer>5832</answer>
+    </hint>
     <question>
+	  <input>13</input>
       <answer>23514624000</answer>
     </question>
   </p008>

@@ -20,10 +20,9 @@ public final class eu001 implements EulerSolvable {
     @Override
     public String solve(String... in) {
         
-        int sum = 0;
-        
         int lim = Integer.parseInt(in[0]);
-        
+        int sum = 0;
+                
         for (int x = 0; x < lim; x++) {
             
             if ( (x % 3) == 0 || (x % 5) == 0 ) {

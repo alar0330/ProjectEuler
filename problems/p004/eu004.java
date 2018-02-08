@@ -23,8 +23,9 @@ public final class eu004 implements EulerSolvable {
         
         int digits = Integer.parseInt(in[0]);
         
+        // Implement (long) pow
         long max = 1;
-        for (int i = 0; i < digits; i++) max *= 10;   // Implement (long) pow
+        for (int i = 0; i < digits; i++) max *= 10;
         
         long p = 0;    
         for (long m = max - 1; m >= max / 10; m--) {

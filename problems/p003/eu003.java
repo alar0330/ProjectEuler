@@ -22,7 +22,6 @@ public final class eu003 implements EulerSolvable {
     public String solve(String... in) {
         
         long num = Long.parseLong(in[0]);
-        
         long ans = 0;
         
         // case: 0 or 1

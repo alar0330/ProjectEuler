@@ -28,6 +28,7 @@ from problems.p004.eu004 import *
 from problems.p005.eu005 import *
 from problems.p006.eu006 import *
 from problems.p007.eu007 import *
+from problems.p008.eu008 import *
 
 
 
@@ -252,6 +253,30 @@ class test007(unittest.TestCase):
         
     def test_hintCase(self):
         self.assertEqual(eu007(self.hinp), self.hans, failed_hint_answer)
+        
+
+class test008(unittest.TestCase):
+
+    # --- Setup
+    def setUp(self):
+        pnum = 8
+        pstr = "p{:03d}".format(pnum)
+        #    
+        self.qinp = int(root.find(pstr).find('question').find('input').text)
+        self.qans = int(root.find(pstr).find('question').find('answer').text)
+        #
+        self.hinp = int(root.find(pstr).find('hint').find('input').text)
+        self.hans = int(root.find(pstr).find('hint').find('answer').text)
+        
+    def tearDown(self):
+        pass
+        
+    # --- Tests
+    def test_correctAnswer(self):
+        self.assertEqual(eu008(self.qinp), self.qans, failed_correct_answer)
+        
+    def test_hintCase(self):
+        self.assertEqual(eu008(self.hinp), self.hans, failed_hint_answer)
         
         
 # ------ RUNNER -------

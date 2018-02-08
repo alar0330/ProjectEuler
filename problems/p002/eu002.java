@@ -22,7 +22,6 @@ public final class eu002 implements EulerSolvable {
     public String solve(String... in) {
         
         int lim = Integer.parseInt(in[0]);
-        
         int sum = 0;        
         int a = 0, b = 1;
         
