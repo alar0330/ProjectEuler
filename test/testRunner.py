@@ -29,7 +29,8 @@ from problems.p005.eu005 import *
 from problems.p006.eu006 import *
 from problems.p007.eu007 import *
 from problems.p008.eu008 import *
-
+from problems.p009.eu009 import *
+from problems.p010.eu010 import *
 
 
 
@@ -71,7 +72,7 @@ class test001(unittest.TestCase):
     def test_zeroCase(self):
         self.assertEqual(eu001(0), 0, failed_zero_answer)
         
-        
+       
 class test002(unittest.TestCase):
 
     # --- Setup
@@ -278,8 +279,58 @@ class test008(unittest.TestCase):
     def test_hintCase(self):
         self.assertEqual(eu008(self.hinp), self.hans, failed_hint_answer)
         
+ 
+class test009(unittest.TestCase):
+
+    # --- Setup
+    def setUp(self):
+        pnum = 9
+        pstr = "p{:03d}".format(pnum)
+        #    
+        self.qinp = int(root.find(pstr).find('question').find('input').text)
+        self.qans = int(root.find(pstr).find('question').find('answer').text)
+        #
+        self.hinp = int(root.find(pstr).find('hint').find('input').text)
+        self.hans = int(root.find(pstr).find('hint').find('answer').text)
+        
+    def tearDown(self):
+        pass
+        
+    # --- Tests
+    def test_correctAnswer(self):
+        self.assertEqual(eu009(self.qinp), self.qans, failed_correct_answer)
+        
+    def test_hintCase(self):
+        self.assertEqual(eu009(self.hinp), self.hans, failed_hint_answer)
+        
+        
+class test010(unittest.TestCase):
+
+    # --- Setup
+    def setUp(self):
+        pnum = 10
+        pstr = "p{:03d}".format(pnum)
+        #    
+        self.qinp = int(root.find(pstr).find('question').find('input').text)
+        self.qans = int(root.find(pstr).find('question').find('answer').text)
+        #
+        self.hinp = int(root.find(pstr).find('hint').find('input').text)
+        self.hans = int(root.find(pstr).find('hint').find('answer').text)
+        
+    def tearDown(self):
+        pass
+        
+    # --- Tests
+    def test_correctAnswer(self):
+        self.assertEqual(eu010(self.qinp), self.qans, failed_correct_answer)
+        
+    def test_hintCase(self):
+        self.assertEqual(eu010(self.hinp), self.hans, failed_hint_answer)
+        
+
+        
         
 # ------ RUNNER -------
-
 if __name__ == '__main__':
     unittest.main(verbosity=2)
+    #print(locals()['eu002'])

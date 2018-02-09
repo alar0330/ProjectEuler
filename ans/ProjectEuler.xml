@@ -75,17 +75,27 @@
       <answer>5832</answer>
     </hint>
     <question>
-	  <input>13</input>
+      <input>13</input>
       <answer>23514624000</answer>
     </question>
   </p008>
   <p009>
+    <hint>
+      <input>12</input>
+      <answer>60</answer>
+    </hint>
     <question>
+      <input>1000</input>
       <answer>31875000</answer>
     </question>
   </p009>
   <p010>
+    <hint>
+      <input>10</input>
+      <answer>17</answer>
+    </hint>
     <question>
+      <input>2000000</input>
       <answer>142913828922</answer>
     </question>
   </p010>
