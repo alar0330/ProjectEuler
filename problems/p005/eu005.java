@@ -2,21 +2,21 @@
  * Project Euler: Problem #005
  *
  * @author   Alexander Arzhanov
- * @version  07/02/18
+ * @version  10/02/18
  */
  
 package problems.p005;
 import problems.util.EulerSolvable;
 
 
-// Palindrome
+// Largest evenly-divisible
 public final class eu005 implements EulerSolvable {
 
     /**
-    * Solve by factorizing the input parameter.
+    * Naive implementation with dumb mod-divisions (with some speed enhancements).
     *
-    * @param in  Number of digits that product numbers made of (String in in[0]).
-    * @return    The largest palindrome (String).
+    * @param in  Max divisor (String in in[0]).
+    * @return    The smaller numbers that is evenly divisible by all numbers up to `max` (String).
     */
     @Override
     public String solve(String... in) {
