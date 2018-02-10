@@ -24,4 +24,8 @@ def eu005(max):
         n += max
                        
     return n
-        
+
+    
+# Independent driver
+if __name__ == '__main__':
+    print("Check: {}".format(eu005(20)))
