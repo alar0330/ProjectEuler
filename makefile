@@ -15,7 +15,7 @@ WFLAGS = -Wall -pedantic
 OFLAGS =
 
 # Python settings
-PY3 = py3
+PY3 = python
 
 # Directory settings
 out = out
