@@ -20,7 +20,7 @@ Py-files are Docstring documented in *reST* style (*Sphinx*-compliant).
 make cppTest
 ```
 ## Python Setup
-- Change the standard Python 3 interpreter alias if necessary (default is ```py3```, see *makefile*).
+- Change the standard Python 3 interpreter alias if necessary (default is ```python```, see *makefile*).
 
 ## Python Compile & Test
 ```
