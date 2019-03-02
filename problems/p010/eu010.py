@@ -35,3 +35,4 @@ def eu010(lim):
 # Independent driver
 if __name__ == '__main__':
     print("Check: {}".format(eu010(2*1000*1000)))
+    print("TMP")
