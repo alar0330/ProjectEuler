@@ -3,10 +3,9 @@
 ## Some solutions to the problems from Project Euler.
 
 Quick solutions to some of the Project Euler problems (https://projecteuler.net/).
-Implementation in C++, Python, Java (coming), C# (coming) for practicing.
+Implementation in Python, Java, and C++.
 
-**C++ solutions** are accompanied with unit tests within googletest framework to practice unit-test driven development
-and are documented in *Doxygen* style.
+**C++ solutions** are accompanied with unit tests within googletest for practicing with the framework. Inline documentation in *Doxygen* style.
 
 **Python solutions** are cross-checked with PyUnit (unittest), and
 include automated parsing of provided XML-file with the answers to the Euler problems.
