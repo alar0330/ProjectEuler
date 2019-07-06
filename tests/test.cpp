@@ -3,8 +3,8 @@
  * Using C++ googletest framework.
  *
  * TODO: 
- *   - automatically read the correct answers from an ASCII-file
- *   - automatically read the inputs for Euler problems from ASCII
+ *   - automatically read the correct answers from an YAML-file
+ *   - automatically read the inputs for Euler problems from YAML
 **/
 
 // Googletest header
@@ -12,10 +12,10 @@
 
 
 // Euler templates to test
-#include "../problems/p001/eu001.hpp"
-// #include "../problems/p002/eu002.hpp"
-// #include "../problems/p003/eu003.hpp"
-#include "../problems/p004/eu004.hpp"
+#include "../problems/p001/solution.hpp"
+// #include "../problems/p002/solution.hpp"
+// #include "../problems/p003/solution.hpp"
+#include "../problems/p004/solution.hpp"
 
 
 
@@ -72,37 +72,37 @@ class Test004 : public testing::Test {
 // Problem # 001:
 TEST_F(Test001, zeroCase) {
   
-    ASSERT_EQ(eu001(0), 0);
+    ASSERT_EQ(p001(0), 0);
    
 }
 
 TEST_F(Test001, eulerQuestionCase) {
   
-    ASSERT_EQ(eu001(qinp), qans);
+    ASSERT_EQ(p001(qinp), qans);
    
 }
 
 TEST_F(Test001, eulerHintCase) {
   
-    ASSERT_EQ(eu001(hinp), hans);
+    ASSERT_EQ(p001(hinp), hans);
    
 }
 
 // Problem # 004:
 TEST_F(Test004, eulerHintCase) {
   
-    ASSERT_EQ(eu004(hinp), hans);
+    ASSERT_EQ(p004(hinp), hans);
    
 }
 
 TEST_F(Test004, eulerQuestionCase) {
   
-    ASSERT_EQ(eu004(qinp), qans);
+    ASSERT_EQ(p004(qinp), qans);
    
 }
 
 TEST_F(Test004, unityCase) {
   
-    ASSERT_EQ(eu004(1), 9);
+    ASSERT_EQ(p004(1), 9);
    
 }
