@@ -7,7 +7,7 @@ import ruamel.yaml as yaml
 sys.path.append('..')
 
 
-def get_args():
+def parse_args():
     parser = ap.ArgumentParser()
     parser.add_argument('-a', '--answers',
                         default='answers.yaml',
@@ -20,7 +20,7 @@ def get_args():
     return parser.parse_args()
     
 
-def get_answers(file):
+def read_answers(file):
     with open(file, 'r') as f:
         return yaml.safe_load(f)
     
@@ -40,10 +40,9 @@ def test(problem, input, answer):
     
     
 if __name__ == '__main__':
-
-    args = get_args()
-    answers = get_answers(args.answers)
-    timer = 0.
+    args = parse_args()
+    answers = read_answers(args.answers)
+    tottime = 0.
         
     if args.problem:
         problems = [args.problem]
@@ -52,11 +51,9 @@ if __name__ == '__main__':
         problems = [int(os.path.basename(os.path.dirname(m))[1:]) for m in all_solutions]
         
     for p in problems:
-        inp = int(answers[p]['inp'])
-        ans = int(answers[p]['ans'])
-        timer += test(p, inp, ans)
+        input = int(answers[p]['inp'])
+        correct_answer = int(answers[p]['ans'])
+        tottime += test(p, input, correct_answer)
     
     print("-" * 30)
-    print("Total time: {:.3f} s".format(timer))
-
-    
+    print("Total time: {:.3f} s".format(tottime))
