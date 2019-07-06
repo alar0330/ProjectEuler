@@ -1,5 +1,4 @@
 /**
- *  @file    eu001.hpp
  *  @author  Alexander Arzhanov
  *  @version 28/01/18
  *
@@ -24,7 +23,7 @@
  *  @return     The answer.
 **/
 template <class T, class D = typename std::enable_if<std::is_integral<T>::value>::type>
-T eu001(T lim) {
+T solve(T lim) {
     
     T acc = 0;
     

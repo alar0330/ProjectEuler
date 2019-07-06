@@ -1,6 +1,5 @@
 
 /**
- *  @file    eu004.hpp
  *  @author  Alexander Arzhanov
  *  @version 30/01/18
  *
@@ -21,7 +20,7 @@
  *  @return         The largest palindrome.
 **/
 template <class T, class = typename std::enable_if<std::is_integral<T>::value>::type>
-long eu004(T digits) {
+long solve(T digits) {
     
     // Lambda returns input if it is palindrome, zero otherwise
     auto pali = [](long inp) {
