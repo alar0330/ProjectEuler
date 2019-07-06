@@ -20,7 +20,7 @@
  *  @return         The largest palindrome.
 **/
 template <class T, class = typename std::enable_if<std::is_integral<T>::value>::type>
-long solve(T digits) {
+long p004(T digits) {
     
     // Lambda returns input if it is palindrome, zero otherwise
     auto pali = [](long inp) {

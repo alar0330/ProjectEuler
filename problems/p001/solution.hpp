@@ -23,7 +23,7 @@
  *  @return     The answer.
 **/
 template <class T, class D = typename std::enable_if<std::is_integral<T>::value>::type>
-T solve(T lim) {
+T p001(T lim) {
     
     T acc = 0;
     

@@ -7,7 +7,7 @@ TODO: implement
 
 public final class testRunner {
 	
-	@Test public void Test_eu001() { assertEquals("233168" , eu001.solve()); }
+	@Test public void Test_eu001() { assertEquals("233168" , p001.solve()); }
     
 }
 */
