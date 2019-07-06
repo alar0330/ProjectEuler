@@ -10,7 +10,7 @@ import problems.util.EulerSolvable;
 
 
 // Largest prime factor
-public final class eu003 implements EulerSolvable {
+public final class p003 implements EulerSolvable {
 
     /**
     * Solve by factorizing the input parameter.
@@ -59,7 +59,7 @@ public final class eu003 implements EulerSolvable {
     // Stand-alone test-run
     public static void main(String args[]) {
         
-        System.out.println("\n ANS: " + new eu003().solve("13195"));
+        System.out.println("\n ANS: " + new p003().solve("13195"));
         
     }    
 }

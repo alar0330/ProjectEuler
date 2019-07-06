@@ -10,7 +10,7 @@ import problems.util.EulerSolvable;
 
 
 // Largest evenly-divisible
-public final class eu005 implements EulerSolvable {
+public final class p005 implements EulerSolvable {
 
     /**
     * Naive implementation with dumb mod-divisions (with some speed enhancements).
@@ -45,7 +45,7 @@ public final class eu005 implements EulerSolvable {
     // Stand-alone test-run
     public static void main(String args[]) {
         
-        System.out.println("\n ANS: " + new eu005().solve("20"));
+        System.out.println("\n ANS: " + new p005().solve("20"));
         
     }    
 }

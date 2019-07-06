@@ -10,7 +10,7 @@ import problems.util.EulerSolvable;
 
 
 // Palindrome
-public final class eu004 implements EulerSolvable {
+public final class p004 implements EulerSolvable {
 
     /**
     * Solve by factorizing the input parameter.
@@ -63,7 +63,7 @@ public final class eu004 implements EulerSolvable {
     // Stand-alone test-run
     public static void main(String args[]) {
         
-        System.out.println("\n ANS: " + new eu004().solve("2"));
+        System.out.println("\n ANS: " + new p004().solve("2"));
         
     }    
 }

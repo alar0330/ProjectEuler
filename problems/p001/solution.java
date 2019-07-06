@@ -9,7 +9,7 @@ package problems.p001;
 import problems.util.EulerSolvable;
 
 
-public final class eu001 implements EulerSolvable {
+public final class p001 implements EulerSolvable {
     
     /**
     * Naive implementation.
@@ -36,7 +36,7 @@ public final class eu001 implements EulerSolvable {
     // Stand-alone test-run
     public static void main(String args[]) {
         
-        System.out.println(new eu001().solve("10"));
+        System.out.println(new p001().solve("10"));
         
     }    
 }

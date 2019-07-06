@@ -10,7 +10,7 @@ import problems.util.EulerSolvable;
 
 
 // Fibonacci
-public final class eu002 implements EulerSolvable {
+public final class p002 implements EulerSolvable {
 
     /**
     * Naive solution with a function.
@@ -39,7 +39,7 @@ public final class eu002 implements EulerSolvable {
     // Stand-alone test-run
     public static void main(String args[]) {
         
-        System.out.println(new eu002().solve("100"));
+        System.out.println(new p002().solve("100"));
         
     }    
 }
