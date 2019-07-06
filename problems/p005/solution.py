@@ -2,7 +2,7 @@
 Project Euler: Problem #005
 """
 
-def eu005(max):
+def solve(max):
     """
     Naive implementation with dumb mod-divisions (with some speed enhancements).
     
@@ -28,4 +28,4 @@ def eu005(max):
     
 # Independent driver
 if __name__ == '__main__':
-    print("Check: {}".format(eu005(20)))
+    print("Check: {}".format(solve(20)))

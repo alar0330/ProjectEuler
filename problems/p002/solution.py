@@ -2,7 +2,7 @@
 Project Euler: Problem #002
 """
 
-def eu002(lim = 4 * 1000 * 1000):
+def solve(lim = 4 * 1000 * 1000):
     """
     Naive solution with a function.
 
@@ -22,7 +22,7 @@ def eu002(lim = 4 * 1000 * 1000):
     
     return sum
     
-def eu002_alt(lim):
+def solve_alt(lim):
     """
     Alternative solution using a generator.
     

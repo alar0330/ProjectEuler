@@ -3,7 +3,7 @@ Project Euler: Problem #001
 """
 
 
-def eu001(lim = 1000):
+def solve(lim = 1000):
     """
     Naive implementation with sum over a generator
 

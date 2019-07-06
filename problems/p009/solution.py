@@ -3,7 +3,7 @@ Project Euler: Problem #009
 """
 
 
-def eu009(s):
+def solve(s):
     """After a short analytic transformation, the
     algorithm searches for an integer value that solves the 
     derived equation by iterating through all possibilities.
@@ -25,4 +25,4 @@ def eu009(s):
     
 # Independent driver
 if __name__ == '__main__':
-    print("Check: {}".format(eu009(12)))
+    print("Check: {}".format(solve(12)))

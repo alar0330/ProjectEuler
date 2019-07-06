@@ -2,7 +2,7 @@
 Project Euler: Problem #006
 """
 
-def eu006(max):
+def solve(max):
     """
     Semi-brute-force solution (using only arith. series formula).
     
@@ -20,7 +20,7 @@ def eu006(max):
     return int(sumSq - sqSum)
     
     
-def eu006_alt(max):
+def solve_alt(max):
     """
     Analytic solution.
     
@@ -36,4 +36,4 @@ def eu006_alt(max):
     
 # Independent driver
 if __name__ == '__main__':
-    print("Check: {}".format(eu006(10)))
+    print("Check: {}".format(solve(10)))

@@ -4,7 +4,7 @@ Project Euler: Problem #010
 
 from math import sqrt
 
-def eu010(lim):
+def solve(lim):
     """Slightly optimized straight-forward 
     prime number generator below the input limit.
     
@@ -34,5 +34,5 @@ def eu010(lim):
     
 # Independent driver
 if __name__ == '__main__':
-    print("Check: {}".format(eu010(2*1000*1000)))
+    print("Check: {}".format(solve(2*1000*1000)))
     print("TMP")

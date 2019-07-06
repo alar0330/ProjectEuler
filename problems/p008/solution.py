@@ -3,7 +3,7 @@ Project Euler: Problem #008
 """
 
 
-def eu008(digits):
+def solve(digits):
     """Parse the kilo-string using '0' as delimiters into tokens.
     Iterate through each token, if its size less than 'digits'.
     
@@ -53,4 +53,4 @@ def eu008(digits):
     
 # Independent driver
 if __name__ == '__main__':
-    print("Check: {}".format(eu008(4)))
+    print("Check: {}".format(solve(4)))

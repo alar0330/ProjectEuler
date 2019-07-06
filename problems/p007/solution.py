@@ -4,7 +4,7 @@ Project Euler: Problem #007
 
 from math import sqrt
 
-def eu007(nth):
+def solve(nth):
     """
     Memory-friendly and speed-optimized prime number generator.
     
@@ -54,4 +54,4 @@ def eu007(nth):
     
 # Independent driver
 if __name__ == '__main__':
-    print("Check: {}".format(eu007(1)))
+    print("Check: {}".format(solve(1)))

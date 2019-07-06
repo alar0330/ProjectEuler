@@ -4,7 +4,7 @@ Project Euler: Problem #004
 
 from math import pow
 
-def eu004(digits):
+def solve(digits):
     """
     Naive implementation with nested palindrome function.
 

@@ -4,7 +4,7 @@ Project Euler: Problem #003
 
 from math import sqrt
 
-def eu003(num):
+def solve(num):
     """
     Solve by factorizing the input parameter.
 
