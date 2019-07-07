@@ -10,6 +10,7 @@
 # C++ GITIGNORE BELOW:
 ######################################
 
+local/
 tmp/
 out/
 bin/
