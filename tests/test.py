@@ -50,10 +50,10 @@ if __name__ == '__main__':
         all_solutions = sorted(glob.glob('../problems/p*/solution.py'))
         problems = [int(os.path.basename(os.path.dirname(m))[1:]) for m in all_solutions]
         
+    print("-" * 30)
     for p in problems:
         input = int(answers[p]['inp'])
         correct_answer = int(answers[p]['ans'])
         tottime += test(p, input, correct_answer)
-    
     print("-" * 30)
     print("Total time: {:.3f} s".format(tottime))
